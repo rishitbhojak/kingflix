@@ -1,0 +1,84 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+*
+{
+    font-family: 'Montserrat';
+    color: #333333;
+}
+.signInContainer
+{
+    background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.column 
+{
+    background-color: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgb(0, 0, 0, 0.1) 0 1px 2px;
+    padding: 20px 35px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    
+}
+.column form
+{
+display: flex;
+flex-direction: column;
+}
+.column form input[type="text"],.column form input[type="email"],.column form input[type="password"]
+{
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.column form input[type="submit"]
+{
+    color: white;
+    background-color: rgb(27, 27, 231);
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+} 
+.column .header{
+    padding: 20px 0;
+}
+.column h3
+{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    color: black;
+}
+.column .header span
+{
+    font-size: 14px;
+    
+}
+.column .header img
+{
+    width: 130px;
+}
+#signinMessage{
+    font-size: 14px;
+    font-weight: 400;
+   text-decoration: none;
+}
