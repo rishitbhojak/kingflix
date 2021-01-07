@@ -17,12 +17,7 @@ $password = FormSanitizer::sanitizeFormPassword($_POST["password"]);
 $password2 = FormSanitizer::sanitizeFormPassword($_POST["password2"]);
 
 }
-
-
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
