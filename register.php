@@ -19,8 +19,6 @@ $password2 = FormSanitizer::sanitizeFormPassword($_POST["password2"]);
 $account->validateFirstName($firstName);
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
