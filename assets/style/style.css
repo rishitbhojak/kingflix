@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 html,body{
     margin: 0;
     padding: 0;
     height:100%;
+    font-family: 'Montserrat', sans-serif;
 }
 *
 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #333333;
 }
 .signInContainer
@@ -43,6 +45,7 @@ flex-direction: column;
 }
 .column form input[type="submit"]
 {
+ 
     color: white;
     background-color: rgb(27, 27, 231);
     height: 36px;
@@ -71,6 +74,7 @@ flex-direction: column;
 .column .header span
 {
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     
 }
 .column .header img

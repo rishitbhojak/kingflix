@@ -21,7 +21,7 @@ echo "Form was submitted!";
    <div class="column">
 
    <div class="header">
-   <img src="assets/style/images/logo.png" alt="Logo" srcset="">
+   <img src="assets/images/logo.png" alt="Logo" srcset="">
        <h3>Sign In!</h3>
        <span>To Continue to Kingflix</span>
       
