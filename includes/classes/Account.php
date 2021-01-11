@@ -39,6 +39,9 @@ private function validateUsername($un)
 array_push($this->errorArray, Constants::$usernameCharacters);
 
     }
+
+    $query = $this->con->prepare("SELECT * FROM users WHERE username=:un");
+
 }
 public function getError($error)
 {
