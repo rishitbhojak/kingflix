@@ -16,7 +16,7 @@ $email2 = FormSanitizer::sanitizeFormEmail($_POST["email2"]);
 $password = FormSanitizer::sanitizeFormPassword($_POST["password"]);
 $password2 = FormSanitizer::sanitizeFormPassword($_POST["password2"]);
 
-$account->register($firstName, $lastName, $username, $email , $email2, $password, $password2)
+$account->register($firstName, $lastName, $username, $email , $email2, $password, $password2);
 }
 ?>
 <!DOCTYPE html>
