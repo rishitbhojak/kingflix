@@ -37,11 +37,17 @@ private function validateUsername($un)
     if(strlen($un)<2 || strlen($un)>25)
     {
 array_push($this->errorArray, Constants::$usernameCharacters);
-
+return;
     }
 
     $query = $this->con->prepare("SELECT * FROM users WHERE username=:un");
+    $query->bindValue(":un", $un);
+    $query->execute();
 
+    if($query->rowcount()!=0)
+    {
+        array_push($this->errorArray, Constants::$usernameTaken);
+    }
 }
 public function getError($error)
 {
