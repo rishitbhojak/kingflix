@@ -45,6 +45,7 @@ $account->register($firstName, $lastName, $username, $email , $email2, $password
        <?php echo $account->getError(Constants::$lastNameCharacters); ?>
        <input type="text" name="lastName" placeholder="Last Name" required>
 
+       <?php echo $account->getError(Constants::$usernameCharacters); ?>
        <input type="text" name="username" placeholder="Username" required>
 
        <input type="email" name="email" placeholder="Email" required>

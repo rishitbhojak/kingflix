@@ -32,6 +32,14 @@ array_push($this->errorArray, Constants::$lastNameCharacters);
 
     }
 }
+private function validateUsername($un)
+{
+    if(strlen($un)<2 || strlen($un)>25)
+    {
+array_push($this->errorArray, Constants::$usernameCharacters);
+
+    }
+}
 public function getError($error)
 {
     if (in_array($error, $this->errorArray))
