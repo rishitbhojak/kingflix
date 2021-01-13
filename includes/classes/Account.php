@@ -14,6 +14,7 @@ public function register($fn, $ln, $un, $em, $em2, $pw, $pw2)
 $this->validateFirstName($fn);
 $this->validateLastName($ln);
 $this->validateUsername($un);
+$this->validateEmails($em, $em2);
 }
 
 private function validateFirstName($fn)
