@@ -30,7 +30,6 @@ private function validateLastName($ln)
     if(strlen($ln)<2 || strlen($ln)>25)
     {
 array_push($this->errorArray, Constants::$lastNameCharacters);
-
     }
 }
 private function validateUsername($un)
@@ -55,6 +54,10 @@ private function validateEmails($em, $em2)
     if($em!=$em2)
     {
         array_push($this->errorArray, Constants::$emailsDontMatch);
+    }
+    if(!filter_var($em, FILTER_VALIDATE_EMAIL))
+    {
+        array_push($this->errorArray, Constants::$emailInvalid);
     }
 }
 public function getError($error)
