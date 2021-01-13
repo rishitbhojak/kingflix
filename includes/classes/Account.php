@@ -49,6 +49,10 @@ return;
         array_push($this->errorArray, Constants::$usernameTaken);
     }
 }
+private function validateEmails($em, $em2)
+{
+    
+}
 public function getError($error)
 {
     if (in_array($error, $this->errorArray))
