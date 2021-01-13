@@ -7,13 +7,13 @@ private $errorArray = array();
 
 public function __construct($con){
 $this->con = $con;
-
 }
 
 public function register($fn, $ln, $un, $em, $em2, $pw, $pw2)
 {
 $this->validateFirstName($fn);
 $this->validateLastName($ln);
+$this->validateUsername($un);
 }
 
 private function validateFirstName($fn)
