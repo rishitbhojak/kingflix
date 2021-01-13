@@ -51,7 +51,10 @@ return;
 }
 private function validateEmails($em, $em2)
 {
-    
+    if($em!=$em2)
+    {
+        array_push($this->errorArray, Constants::$emailsDontMatch);
+    }
 }
 public function getError($error)
 {
