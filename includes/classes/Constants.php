@@ -7,5 +7,6 @@ class Constants
     public static $usernameTaken = "This username is already in use";
     public static $emailsDontMatch = "Your emails don't match";
     public static $emailInvalid = "Your emaiil is invalid";
+    public static $emailTaken = "This Email is already in use";
 }
 ?>
