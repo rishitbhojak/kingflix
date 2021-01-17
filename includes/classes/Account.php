@@ -59,6 +59,7 @@ private function validateEmails($em, $em2)
     if(!filter_var($em, FILTER_VALIDATE_EMAIL))
     {
         array_push($this->errorArray, Constants::$emailInvalid);
+        return;
     }
     $query = $this->con->prepare("SELECT * FROM users WHERE email=:un");
     $query->bindValue(":em", $em);
