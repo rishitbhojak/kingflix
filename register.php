@@ -54,7 +54,7 @@ $account->register($firstName, $lastName, $username, $email , $email2, $password
        <input type="email" name="email" placeholder="Email" required>
 
        <input type="email" name="email2" placeholder="Confirm email" required>
-
+       <?php echo $account->getError(Constants::$passwordsDontMatch); ?>
        <input type="password" name="password" placeholder="Password" required>
 
        <input type="password" name="password2" placeholder="Confirm Password" required>
